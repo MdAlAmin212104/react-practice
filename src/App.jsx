@@ -4,14 +4,14 @@ import Button from './component/Button'
 import Friends from './component/Friends';
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [user, setUser] = useState([]);
-  useEffect(() =>{
-    fetch('https://jsonplaceholder.typicode.com/users')
-    .then (res => res.json())
-    .then (data => setUser(data));
+  // const [count, setCount] = useState(0);
+  // const [user, setUser] = useState([]);
+  // useEffect(() =>{
+  //   fetch('https://jsonplaceholder.typicode.com/users')
+  //   .then (res => res.json())
+  //   .then (data => setUser(data));
     
-  }, []);
+  // }, []);
   
   return (
     
@@ -23,18 +23,18 @@ function App() {
     <Person name = 'Rashad'/>
     
   <Button name ="mobile"/> */}
-    <button onClick={()=> setCount(count + 1)}>Click {count}</button>
+    {/* <button onClick={()=> setCount(count + 1)}>Click {count}</button>
   <p>{user.length} </p>
-  <Friends/>
+  <Friends/> */}
       
     </>
   )
 }
 
-function Person ({name}) {
-  return (
-    <h3>this person name {name}</h3>
-  )
-}
+// function Person ({name}) {
+//   return (
+//     <h3>this person name {name}</h3>
+//   )
+// }
 
 export default App
